@@ -1,6 +1,5 @@
 ﻿using CatFlap.Models;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Web;
 using System.Web.Http;
@@ -33,30 +32,28 @@ namespace CatFlap.Controllers
         {
             Log(id);
 
-            var consumerKey = "KPfjQDlmFn8X53NzNdDqJASYD";
-            var consumerKeySecret = " REa2KO1JRcIST9hGbUopyFcIY4Sew3rcOfhYYJVZQxjmucDpNA";
-            var accessToken = "274482112-urs2d4A9FPvZBQijwRMASCVMgOtYA1PSCfx9lqcy";
-            var accessTokenSecret = " jhK0pKfsY46c2N8DWc1xBKQ2CjItX5B90Kjf0JSZbqwIc";
+            //var consumerKey = "KPfjQDlmFn8X53NzNdDqJASYD";
+            //var consumerKeySecret = " REa2KO1JRcIST9hGbUopyFcIY4Sew3rcOfhYYJVZQxjmucDpNA";
+            //var accessToken = "274482112-urs2d4A9FPvZBQijwRMASCVMgOtYA1PSCfx9lqcy";
+            //var accessTokenSecret = " jhK0pKfsY46c2N8DWc1xBKQ2CjItX5B90Kjf0JSZbqwIc";
 
+            //var twit = new TwitterApi(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
 
-            var twit = new TwitterApi(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
+            ////var twitter = new TwitterApi(ConsumerKey, ConsumerKeySecret, AccessToken, AccessTokenSecret);
+            //var response = twit.Tweet("This is my first automated tweet!").Result;
+            //Trace.WriteLine(response);
 
-            //var twitter = new TwitterApi(ConsumerKey, ConsumerKeySecret, AccessToken, AccessTokenSecret);
-            var response = twit.Tweet("This is my first automated tweet!").Result;
-            Trace.WriteLine(response);
-
-//twit.Tweet("").
-
+            //twit.Tweet("").
 
             var cf = new Flap();
-            return Ok(cf.Name);
+            return Ok("PutCatFlap(" + id + ") " + cf.Name);
         }
 
         public IHttpActionResult PostCatFlap(string id)
         {
             var cf = new Flap();
             Log(id);
-            return Ok(cf.Name);
+            return Ok("PostCatFlap(" + id + ") " + cf.Name);
         }
 
         private void Log(string message)
