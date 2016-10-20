@@ -64,7 +64,7 @@ namespace CatFlap.Controllers
 
             //"fb9f3477b9d84e5b45dd48e0bf78c9cf21bf40""
 
-            var cf = new Flap();
+            //var cf = new Flap();
 
             var hashesOK = hashCompare.Equals(hash, StringComparison.CurrentCultureIgnoreCase);
 
@@ -73,7 +73,25 @@ namespace CatFlap.Controllers
             //StringBuilder sb = new StringBuilder();
             //sb.AppendLine();
 
-            return Ok("PostCatFlap() " + cf.Name + " " + x);
+            // Map parameters to properties
+            var passage = new Passage();
+            switch (payload.ToUpper())
+            {
+                case "IN":
+                    passage.Direction = Passage.DirectionType.IN;
+                    break;
+                case "OUT":
+                    passage.Direction = Passage.DirectionType.OUT;
+                    break;
+                default:
+                    break;
+            }
+
+            CatFlapData.Save(passage);
+
+
+            //return Ok("PostCatFlap() " + cf.Name + " " + x);
+            return Ok("OK!");
         }
 
 
