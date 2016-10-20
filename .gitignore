@@ -12,6 +12,9 @@
 *_i.c
 *_p.c
 *.ncb
+*.dll
+*.pdb
+*.suo
 *.suo
 *.tlb
 *.tlh

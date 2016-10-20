@@ -11,9 +11,12 @@ namespace CatFlap.Test
         [Test]
         public void TestMethod1()
         {
-            var passage = new Passage(Passage.DirectionType.IN);
-            CatFlapData.Save(passage);
-            //CatFlap.Models.Flap.test();
+            for (int i = 0; i < 10; i++)
+            {
+                var passage = new Passage(Passage.DirectionType.IN);
+//passage.
+                CatFlapData.Save(passage);
+            }
         }
 
         [Test]
@@ -23,7 +26,7 @@ namespace CatFlap.Test
             var x = CatFlapData.GetAll();
             //CatFlap.Models.Flap.test();
 
-            foreach (var item in x)
+            foreach (var item in x) 
             {
                 Trace.WriteLine(item.id);
                 Trace.WriteLine(item.Direction);
