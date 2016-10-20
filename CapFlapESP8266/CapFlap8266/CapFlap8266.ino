@@ -11,6 +11,7 @@
 const uint8_t PIN_ENTRY = D7;
 const uint8_t PIN_EXIT = D6;
 
+const String SALT = "%8vvpAwg48cvlcRwfAiY%A4gEj"; // not very secure
 const String URL = "http://DESKTOP-RCITD5B/catflap/api/catflap/";
 
 int DetectionIgnoreMillis = 5000;
@@ -54,7 +55,10 @@ void loop() {
 void Action(String url, String message, String payload)
 {
 
-  String hash = GetHash(payload);
+  String hash = GetHash(SALT + payload);
+
+  USE_SERIAL.print("TEST HASH: ");
+  USE_SERIAL.print(hash);
 
   url.concat("?payload=");
   url.concat(payload);

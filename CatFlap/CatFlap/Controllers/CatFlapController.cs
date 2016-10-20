@@ -56,7 +56,10 @@ namespace CatFlap.Controllers
         [System.Web.Http.HttpPost]
         public IHttpActionResult PostCatFlap(string payload, string hash)
         {
-            var hashCompare = Crypto.GetHashString(payload);
+
+            const String SALT = "%8vvpAwg48cvlcRwfAiY%A4gEj"; // not very secure
+
+            var hashCompare = Crypto.GetHashString(SALT + payload);
 
 
             //"fb9f3477b9d84e5b45dd48e0bf78c9cf21bf40""
