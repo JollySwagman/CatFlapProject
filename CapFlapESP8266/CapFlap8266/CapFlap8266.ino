@@ -26,14 +26,7 @@ void setup() {
   USE_SERIAL.begin(115200);
   // USE_SERIAL.setDebugOutput(true);
 
-  //  for (uint8_t t = 4; t > 0; t--) {
-  //    USE_SERIAL.printf("[SETUP] WAIT %d...\n", t);
-  //    USE_SERIAL.flush();
-  //    delay(500);
-  //  }
-
   WiFiMulti.addAP("Brian", "cymru am byth");
-
   USE_SERIAL.println("Connected to Brian, setup complete.");
 }
 
@@ -54,11 +47,10 @@ void loop() {
 
 void Action(String url, String message, String payload)
 {
-
   String hash = GetHash(SALT + payload);
 
-  USE_SERIAL.print("TEST HASH: ");
-  USE_SERIAL.print(hash);
+  //  USE_SERIAL.print("TEST HASH: ");
+  //  USE_SERIAL.print(hash);
 
   url.concat("?payload=");
   url.concat(payload);
@@ -72,6 +64,7 @@ void Action(String url, String message, String payload)
   USE_SERIAL.println(hash);
   USE_SERIAL.print("URL: ");
   USE_SERIAL.println(url);
+  USE_SERIAL.println("");
 
   digitalWrite(LED_BUILTIN, LOW);
 

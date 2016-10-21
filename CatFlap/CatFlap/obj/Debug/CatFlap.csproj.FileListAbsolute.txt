@@ -191,6 +191,6 @@ C:\source\CatFlapProject\CatFlap\CatFlap\bin\Microsoft.Owin.Security.Google.xml
 C:\source\CatFlapProject\CatFlap\CatFlap\bin\Microsoft.Owin.Security.Twitter.xml
 C:\source\CatFlapProject\CatFlap\CatFlap\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\source\CatFlapProject\CatFlap\CatFlap\bin\System.Web.Http.Owin.xml
-C:\source\CatFlapProject\CatFlap\CatFlap\obj\Debug\CatFlap.csprojResolveAssemblyReference.cache
 C:\source\CatFlapProject\CatFlap\CatFlap\obj\Debug\CatFlap.dll
 C:\source\CatFlapProject\CatFlap\CatFlap\obj\Debug\CatFlap.pdb
+C:\source\CatFlapProject\CatFlap\CatFlap\obj\Debug\CatFlap.csprojResolveAssemblyReference.cache

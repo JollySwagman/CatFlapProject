@@ -1,4 +1,5 @@
 #include <Hash.h>
+
 String GetHash(String clearText)
 {
   uint8_t hash[20];

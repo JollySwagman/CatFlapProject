@@ -13,12 +13,14 @@ namespace CatFlap.Models
             OUT
         }
 
+        [Key]
+        public int ID { get; set; }
+
         public DirectionType Direction { get; set; }
 
-        [Key]
-        public int id { get; set; }
+        public string Message { get; set; }
 
-        //public DateTime? PassageTimeAEST { get; private set; }
+        public DateTime? PassageTimeAEST { get; set; }
 
         public Passage()
         {
@@ -35,19 +37,4 @@ namespace CatFlap.Models
         }
     }
 
-    public class LogContext : DbContext
-    {
-        public LogContext() : base()
-        {
-        }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            //Database.SetInitializer<LogContext>(null);
-            base.OnModelCreating(modelBuilder);
-        }
-
-        public DbSet<Passage> Passages { get; set; }
-        //public DbSet<Standard> Standards { get; set; }
-    }
 }

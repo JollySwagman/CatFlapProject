@@ -54,20 +54,25 @@
                 });
         }
 
-        //function showLog() {
-        //    var id = $('#prodId').val();
-            
-        //    $.get(uriCF)
-        //        .done(function (data) {
-        //            //$('#log').text(formatItem(data));
-        //            $('#log').text(data);
-        //        })
-        //        .fail(function (jqXHR, textStatus, err) {
-        //            $('#log').text('Error: ' + err);
-        //        });
-        //}
-
         function showLog() {
+            var id = $('#prodId').val();
+
+            $.get(uriCF)
+                .done(function (data) {
+                    //data = data.split("\n");
+                    var html = "<br />";
+                    //html = data.length;
+                    for (var i = 0; i < data.length; i++) {
+                        html += '[' + data[i].ID + '] [' + data[i].Direction + '] [' + data[i].Message + '] [' + data[i].PassageTimeAEST + ']<br />';
+                    }
+                    $('#log').html(html);
+                    })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#log').text('Error: ' + err);
+                });
+        }
+
+        function showLogOLD() {
             var id = $('#prodId').val();
 
             $.get(uriCF)
@@ -75,17 +80,14 @@
                     data = data.split("\n");
                     var html;
                     for (var i = 0; i < data.length; i++) {
-                        html += '<p>' + data[i] + '</p>';
+                        html += data[i] + '<br />';
                     }
                     $('#log').html(html);
-                })
+                    })
                 .fail(function (jqXHR, textStatus, err) {
                     $('#log').text('Error: ' + err);
                 });
         }
-
-
-
     </script>
 </body>
 </html>

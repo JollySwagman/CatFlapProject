@@ -36,3 +36,30 @@
 10/20/2016 3:38:33 PM--> Reading log
 10/20/2016 3:38:33 PM--> Reading log
 10/20/2016 3:38:33 PM--> Reading log
+10/21/2016 10:54:12 AM--> Reading log
+10/21/2016 11:06:26 AM--> Reading log 2
+10/21/2016 11:06:29 AM--> Reading log 2
+10/21/2016 11:09:19 AM--> Reading log 2
+10/21/2016 11:10:18 AM--> Reading log 2
+10/21/2016 11:58:53 AM--> Reading log 2
+10/21/2016 11:59:08 AM--> Reading log 2
+10/21/2016 11:59:37 AM--> Reading log 2
+10/21/2016 12:03:43 PM--> Reading log 2
+10/21/2016 1:09:57 PM--> Reading log 2
+10/21/2016 1:45:35 PM--> Reading log 2
+10/21/2016 4:16:43 PM--> Reading log 2
+10/21/2016 4:18:53 PM--> Reading log 2
+10/21/2016 4:19:24 PM--> Reading log 2
+10/21/2016 4:19:37 PM--> Reading log 2
+10/21/2016 4:21:25 PM--> Reading log 2
+10/21/2016 4:21:42 PM--> Reading log 2
+10/21/2016 4:32:55 PM--> Reading log 2
+10/21/2016 4:32:59 PM--> Reading log 2
+10/21/2016 4:33:19 PM--> Reading log 2
+10/21/2016 4:33:27 PM--> Reading log 2
+10/21/2016 4:33:28 PM--> Reading log 2
+10/21/2016 4:33:29 PM--> Reading log 2
+10/21/2016 4:33:33 PM--> Reading log 2
+10/21/2016 4:33:34 PM--> Reading log 2
+10/21/2016 4:33:37 PM--> Reading log 2
+10/21/2016 4:33:38 PM--> Reading log 2

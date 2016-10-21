@@ -6,7 +6,7 @@ void HttpPost(String url, String payload)
 
     HTTPClient http;
 
-    USE_SERIAL.println("[HTTP] GET " + url);
+    USE_SERIAL.println("[HTTP] POST " + url);
 
     http.begin(url);
 
@@ -17,7 +17,7 @@ void HttpPost(String url, String payload)
     // httpCode will be negative on error
     if (httpCode > 0) {
       // HTTP header has been send and Server response header has been handled
-      USE_SERIAL.printf("[HTTP] GET... code: %d\n", httpCode);
+      USE_SERIAL.printf("[HTTP] POST... code: %d\n", httpCode);
 
       // file found at server
       if (httpCode == HTTP_CODE_OK) {
