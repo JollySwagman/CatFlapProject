@@ -63,3 +63,6 @@
 10/21/2016 4:33:34 PM--> Reading log 2
 10/21/2016 4:33:37 PM--> Reading log 2
 10/21/2016 4:33:38 PM--> Reading log 2
+10/21/2016 4:39:22 PM--> Reading log 2
+10/21/2016 4:39:29 PM--> Reading log 2
+10/21/2016 5:18:29 PM--> Reading log 2
